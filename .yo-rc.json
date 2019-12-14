@@ -1,0 +1,11 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Yannick Reekmans",
+      "unitTestsEnabled": false,
+      "useAzureAppInsights": false
+    },
+    "libraryName": "sharepointPageEmbed",
+    "generator-version": "2.11.1"
+  }
+}

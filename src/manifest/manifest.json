@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.0",
+  "id": "0969cd5a-2ff9-4b8a-b470-c1a75f67bf6a",
+  "packageName": "be.yannickreekmans.sharepointpageembed",
+  "developer": {
+      "name": "Yannick Reekmans",
+      "websiteUrl": "https://blog.yannickreekmans.be",
+      "privacyUrl": "https://blog.yannickreekmans.be",
+      "termsOfUseUrl": "https://blog.yannickreekmans.be"
+  },
+  "icons": {
+      "outline": "icon-outline.png",
+      "color": "icon-color.png"
+  },
+  "name": {
+      "short": "SharePoint Page Embed",
+      "full": "SharePoint Page Embed with SSO"
+  },
+  "description": {
+      "short": "Embed a SharePoint page from your tenant",
+      "full": "Embed any SharePoint page from within your tenant (not just from the associated SharePoint site) as a tab in your Microsoft Teams team or group chat, using Single Sign-On."
+  },
+  "accentColor": "#133a3c",
+  "configurableTabs": [
+      {
+          "configurationUrl": "https://{{HOSTNAME}}/index.html",
+          "canUpdateConfiguration": true,
+          "scopes": [
+              "team",
+              "groupchat"
+          ]
+      }
+  ],
+  "permissions": [],
+  "validDomains": [
+      "{{HOSTNAME}}",
+      "msft.spoppe.com",
+      "resourceseng.blob.core.windows.net",
+      "spoprod-a.akamaihd.net",
+      "spoppe-a.akamaihd.net",
+      "*.sharepoint-df.com",
+      "*.sharepoint.com",
+      "*.login.microsoftonline.com"
+  ],
+  "webApplicationInfo": {
+      "id": "00000003-0000-0ff1-ce00-000000000000",
+      "resource": "https://{{SPHOSTNAME}}"
+  }
+}
