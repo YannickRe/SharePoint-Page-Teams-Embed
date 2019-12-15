@@ -3,9 +3,12 @@ Embed any SharePoint page from within your tenant (not just from the associated 
 
 ## More information
 
-Head on over to [my blog](#) for an overview of why this app is necessary, and how to use it.
+Head on over to [my blog](https://blog.yannickreekmans.be/show-sharepoint-page-in-microsoft-teams/) for an overview of why this app is necessary, and how to use it.
 
 ## Building the app
+The app only contains the configuration page that allows you to enter the relative URL to your SharePoint page. Feel free to use the one I host on a static website (on Azure Storage), it is already preconfigured inside the app manifest.  
+Only if you'd like to self host the configuration page, you need to build the application:
+
 ``` bash
 npm i -g gulp gulp-cli
 gulp build
